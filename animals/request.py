@@ -3,57 +3,57 @@ ANIMALS = [
         "id": 1,
         "name": "Kipper",
         "species": "Bernese Mountain Dog",
+        "status": "Admitted",
         "customerId": 1,
         "locationId": 2,
-        "status": "Admitted"
     },
     {
         "id": 2,
         "name": "Pluto",
         "species": "Dachshund",
+        "status": "Admitted",
         "customerId": 3,
         "locationId": 2,
-        "status": "Admitted"
     },
     {
         "id": 3,
         "name": "Pansy",
         "species": "Pomeranian",
+        "status": "Admitted",
         "customerId": 1,
         "locationId": 1,
-        "status": "Admitted"
     },
     {
         "id": 4,
         "name": "Aoife",
         "species": "Collie",
+        "status": "Admitted",
         "customerId": 2,
         "locationId": 2,
-        "status": "Admitted"
     },
     {
         "id": 5,
         "name": "Alberta",
         "species": "Dalmation",
+        "status": "Admitted",
         "locationId": 1,
         "customerId": 2,
-        "status": "Admitted"
     },
     {
         "id": 6,
         "name": "Josie",
         "species": "Cairn Terrier",
+        "status": "Admitted",
         "locationId": 2,
         "customerId": 3,
-        "status": "Admitted"
     },
     {
         "id": 7,
         "name": "Fritz",
         "species": "Dachshund",
+        "status": "Admitted",
         "locationId": 1,
         "customerId": 2,
-        "status": "Admitted"
     }
 ]
 
