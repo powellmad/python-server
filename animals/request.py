@@ -1,62 +1,63 @@
 import sqlite3
 import json
+from models import Animal
 
 ANIMALS = [
     {
         "id": 1,
         "name": "Kipper",
         "breed": "Bernese Mountain Dog",
+        "status": "Admitted",
         "customerId": 1,
         "locationId": 2,
-        "status": "Admitted"
     },
     {
         "id": 2,
         "name": "Pluto",
         "breed": "Dachshund",
+        "status": "Admitted",
         "customerId": 3,
         "locationId": 2,
-        "status": "Admitted"
     },
     {
         "id": 3,
         "name": "Pansy",
         "breed": "Pomeranian",
+        "status": "Admitted",
         "customerId": 1,
         "locationId": 1,
-        "status": "Admitted"
     },
     {
         "id": 4,
         "name": "Aoife",
         "breed": "Collie",
+        "status": "Admitted",
         "customerId": 2,
         "locationId": 2,
-        "status": "Admitted"
     },
     {
         "id": 5,
         "name": "Alberta",
         "breed": "Dalmation",
+        "status": "Admitted",
         "locationId": 1,
         "customerId": 2,
-        "status": "Admitted"
     },
     {
         "id": 6,
         "name": "Josie",
         "breed": "Cairn Terrier",
+        "status": "Admitted",
         "locationId": 2,
         "customerId": 3,
-        "status": "Admitted"
     },
     {
         "id": 7,
         "name": "Fritz",
         "breed": "Dachshund",
+        "status": "Admitted",
         "locationId": 1,
         "customerId": 2,
-        "status": "Admitted"
     }
 ]
 
