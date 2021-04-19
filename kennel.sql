@@ -48,7 +48,10 @@ INSERT INTO `Customer` VALUES (null, "Mo Silvera", "201 Created St", "mo@silvera
 INSERT INTO `Customer` VALUES (null, "Bryan Nilsen", "500 Internal Error Blvd", "bryan@nilsen.com", "password");
 INSERT INTO `Customer` VALUES (null, "Jenna Solis", "301 Redirect Ave", "jenna@solis.com", "password");
 INSERT INTO `Customer` VALUES (null, "Emily Lemmon", "454 Mulberry Way", "emily@lemmon.com", "password");
-
+INSERT INTO `Customer` VALUES (null, "Madison Powell", "9404 Aster St", "madison@powell.com", "password" );
+INSERT INTO `Customer` VALUES (null, "Lauren Schuler", "414 Iris Ave", "lauren@schuler.com", "password" );
+INSERT INTO `Customer` VALUES (null, "Sari Schyler", "2501 Peony Rd", "sari@schyler.com", "password" );
+]
 
 
 INSERT INTO `Animal` VALUES (null, "Snickers", "Recreation", "Dalmation", 4, 1);
