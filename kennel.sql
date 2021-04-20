@@ -30,12 +30,10 @@ CREATE TABLE `Employee` (
 	`address`	TEXT NOT NULL,
 	`location_id` INTEGER NOT NULL,
 	FOREIGN KEY(`location_id`) REFERENCES `Location`(`id`)
-
 );
 
 INSERT INTO `Location` VALUES (null, 'Nashville North', "64 Washington Heights");
 INSERT INTO `Location` VALUES (null, 'Nashville South', "101 Penn Ave");
-
 
 INSERT INTO `Employee` VALUES (null, "Jisie David", "850 LeadThe Way", 1);
 INSERT INTO `Employee` VALUES (null, "Scott Silver", "391 Terrace St", 2);
@@ -50,10 +48,15 @@ INSERT INTO `Customer` VALUES (null, "Sari Schyler", "2501 Peony Rd", "sari@schy
 INSERT INTO `Customer` VALUES (null, "Ronna Suller", "202 Calla Lily Ct", "ronna@suller.com", "password" );
 
 
-INSERT INTO `Animal` VALUES (null, "Kipper", "Bernese Mountain Dog", "Admitted", 1, 2,);
-INSERT INTO `Animal` VALUES (null, "Pluto", "Dachshund", "Admitted", 3, 2,);
-INSERT INTO `Animal` VALUES (null, "Pansy", "Pomeranian", "Admitted", 1, 1,);
-INSERT INTO `Animal` VALUES (null, "Aoife", "Collie", "Admitted", 2, 2,);
-INSERT INTO `Animal` VALUES (null, "Alberta", "Dalmation", "Admitted", 1, 2,);
-INSERT INTO `Animal` VALUES (null, "Josie", "Cairn Terrier", "Admitted", 2, 3,);
-INSERT INTO `Animal` VALUES (null, "Fritz", "Dachshund", "Admitted", 1, 2,);
+INSERT INTO `Animal` VALUES (null, "Kipper", "Bernese Mountain Dog", "Admitted", 1, 2);
+INSERT INTO `Animal` VALUES (null, "Pluto", "Dachshund", "Admitted", 3, 2);
+INSERT INTO `Animal` VALUES (null, "Pansy", "Pomeranian", "Admitted", 1, 1);
+INSERT INTO `Animal` VALUES (null, "Aoife", "Collie", "Admitted", 2, 2);
+INSERT INTO `Animal` VALUES (null, "Alberta", "Dalmation", "Admitted", 1, 2);
+INSERT INTO `Animal` VALUES (null, "Josie", "Cairn Terrier", "Admitted", 2, 3);
+INSERT INTO `Animal` VALUES (null, "Fritz", "Dachshund", "Admitted", 1, 2);
+
+
+SELECT * FROM Animal;
+
+INSERT INTO `Animal` VALUES (null, "Daps", "Kennel", "Boxer", 2, 2);
