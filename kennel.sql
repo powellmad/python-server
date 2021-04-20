@@ -37,33 +37,23 @@ INSERT INTO `Location` VALUES (null, 'Nashville North', "64 Washington Heights")
 INSERT INTO `Location` VALUES (null, 'Nashville South', "101 Penn Ave");
 
 
-INSERT INTO `Employee` VALUES (null, "Madi Peper", "35498 Madison Ave", 1);
-INSERT INTO `Employee` VALUES (null, "Kristen Norris", "100 Main St", 1);
-INSERT INTO `Employee` VALUES (null, "Meg Ducharme", "404 Unknown Ct", 2);
-INSERT INTO `Employee` VALUES (null, "Hannah Hall", "204 Empty Ave", 1);
-INSERT INTO `Employee` VALUES (null, "Leah Hoefling", "200 Success Way", 2);
+INSERT INTO `Employee` VALUES (null, "Jisie David", "850 LeadThe Way", 1);
+INSERT INTO `Employee` VALUES (null, "Scott Silver", "391 Terrace St", 2);
+INSERT INTO `Employee` VALUES (null, "Aja Washington", "57205 Elm Ave", 1);
+INSERT INTO `Employee` VALUES (null, "Hannah Hall", "411 2nd Ave", 2);
+INSERT INTO `Employee` VALUES (null, "Sage Klein", "805 Magnolia Dr", 1);
 
 
-INSERT INTO `Customer` VALUES (null, "Mo Silvera", "201 Created St", "mo@silvera.com", "password");
-INSERT INTO `Customer` VALUES (null, "Bryan Nilsen", "500 Internal Error Blvd", "bryan@nilsen.com", "password");
-INSERT INTO `Customer` VALUES (null, "Jenna Solis", "301 Redirect Ave", "jenna@solis.com", "password");
-INSERT INTO `Customer` VALUES (null, "Emily Lemmon", "454 Mulberry Way", "emily@lemmon.com", "password");
+INSERT INTO `Customer` VALUES (null, "Madison Powell", "9404 Aster St", "madison@powell.com", "password" );
+INSERT INTO `Customer` VALUES (null, "Lauren Schuler", "414 Iris Ave", "lauren@schuler.com", "password" );
+INSERT INTO `Customer` VALUES (null, "Sari Schyler", "2501 Peony Rd", "sari@schyler.com", "password" );
+INSERT INTO `Customer` VALUES (null, "Ronna Suller", "202 Calla Lily Ct", "ronna@suller.com", "password" );
 
 
-
-INSERT INTO `Animal` VALUES (null, "Snickers", "Recreation", "Dalmation", 4, 1);
-INSERT INTO `Animal` VALUES (null, "Jax", "Treatment", "Beagle", 1, 1);
-INSERT INTO `Animal` VALUES (null, "Falafel", "Treatment", "Siamese", 4, 2);
-INSERT INTO `Animal` VALUES (null, "Doodles", "Kennel", "Poodle", 3, 1);
-INSERT INTO `Animal` VALUES (null, "Daps", "Kennel", "Boxer", 2, 2);
-
-
-SELECT
-    a.id,
-    a.name,
-    a.breed,
-    a.status,
-    a.location_id,
-    a.customer_id
-FROM animal a
-WHERE a.id = 3
+INSERT INTO `Animal` VALUES (null, "Kipper", "Bernese Mountain Dog", "Admitted", 1, 2,);
+INSERT INTO `Animal` VALUES (null, "Pluto", "Dachshund", "Admitted", 3, 2,);
+INSERT INTO `Animal` VALUES (null, "Pansy", "Pomeranian", "Admitted", 1, 1,);
+INSERT INTO `Animal` VALUES (null, "Aoife", "Collie", "Admitted", 2, 2,);
+INSERT INTO `Animal` VALUES (null, "Alberta", "Dalmation", "Admitted", 1, 2,);
+INSERT INTO `Animal` VALUES (null, "Josie", "Cairn Terrier", "Admitted", 2, 3,);
+INSERT INTO `Animal` VALUES (null, "Fritz", "Dachshund", "Admitted", 1, 2,);
