@@ -55,9 +55,8 @@ def get_all_customers():
             # Note that the database fields are specified in
             # exact order of the parameters defined in the
             # customer class above.
-            customer = Customer(row['id'], row['name'], row['breed'],
-                            row['status'], row['location_id'],
-                            row['customer_id'])
+            customer = Customer(row['id'], row['name'], row['address'],
+                            row['email'], row['password'])
 
             customers.append(customer.__dict__)
 
