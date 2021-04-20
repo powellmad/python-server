@@ -1,8 +1,8 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from http.server import BaseHTTPRequestHandler, HTTPServer
-from animals import get_all_animals, get_single_animal, create_animal, delete_animal, update_animal
+from animals import get_all_animals, get_single_animal, create_animal, delete_animal, update_animal, get_animals_by_location
 from locations import get_all_locations, get_single_location, create_location, delete_location, update_location
-from employees import get_all_employees, get_single_employee, create_employee, delete_employee, update_employee
+from employees import get_all_employees, get_single_employee, create_employee, delete_employee, update_employee, get_employees_by_location
 from customers import get_all_customers, get_single_customer, create_customer, delete_customer, update_customer, get_customers_by_email
 import json
 
@@ -90,21 +90,21 @@ class HandleRequests(BaseHTTPRequestHandler):
                 else:
                     response = f"{get_all_animals()}"
             
-            if resource == "locations":
+            elif resource == "locations":
                 if id is not None:
                     response = f"{get_single_location(id)}"
 
                 else:
                     response = f"{get_all_locations()}"
             
-            if resource == "employees":
+            elif resource == "employees":
                 if id is not None:
                     response = f"{get_single_employee(id)}"
 
                 else:
                     response = f"{get_all_employees()}"
             
-            if resource == "customers":
+            elif resource == "customers":
                 if id is not None:
                     response = f"{get_single_customer(id)}"
 
@@ -122,6 +122,15 @@ class HandleRequests(BaseHTTPRequestHandler):
             # email as a filtering value?
             if key == "email" and resource == "customers":
                 response = get_customers_by_email(value)
+
+            if key == "location_id" and resource == "animals":
+                response = get_animals_by_location(value)
+
+            if key == "location_id" and resource == "employees":
+                response = get_employees_by_location(value)
+
+            # if key == "status" and resource == "animals":
+            #     response = get_animals_by_status(value)
 
 
         # This weird code sends a response back to the client
